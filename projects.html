@@ -9,36 +9,83 @@
 </head>
 
 <body>
-    <header>
-        <!-- Header content goes here -->
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Project</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section>
+        <div class="wrapper">
+            <header class="page-header">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="projects.html">Project</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-    <main>
-        <div class="centered">
-            <h1>Projects</h1>
-            <p>Here are some of my current and past projects.</p>
-            <!-- Project cards go here -->
-            <p>Need a full stack web developer? Tell me about your project.</p>
-            <form action="https://postman-echo.com/post" method="POST">
-                <!-- Form fields go here -->
-            </form>
+            <main class="page-body">
+                <div class="centered">
+                    <h1>Projects</h1>
+                    <p>Here are some of my current and past projects.</p>
+                    <div class="card-wrapper">
+                        <div class="card-item">
+                            <h2>Project 1</h2>
+                            <img class="card-image" src="./images/puppy-unsplash.jpg">
+                            <p>Project 1 description.</p>
+                        </div>
+                        <div class="card-item">
+                            <h2>Project 2</h2>
+                            <img class="card-image" src="./images/puppy-unsplash.jpg">
+                            <p>Project 2 description.</p>
+                        </div>
+                        <div class="card-item">
+                            <h2>Project 3</h2>
+                            <img class="card-image" src="./images/puppy-unsplash.jpg">
+                            <p>Project 3 description.</p>
+                        </div>
+                    </div>
+                    <p>Need a full stack web developer? Tell me about your project.</p>
+                    <form action="https://postman-echo.com/post" method="POST" class="form-wrapper">
+                        <div class="form-field">
+                            <label for="email">Enter your Email: </label>
+                            <input type="text" name="email" id="email" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="project-type">Select project type: </label>
+                            <select name="project-type" id="project-type" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="personal">Personal</option>
+                                <option value="website">Website</option>
+                                <option value="eCommerce">eCommerce</option>
+                                <option value="game">Game</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="feedback">Project Details</label>
+                            <textarea id="feedback" name="feedback" rows="5" cols="33" required></textarea>
+
+                        </div>
+                        <div class="form-field">
+                            <label for="attachments">Upload files</label>
+                            <input type="file" id="attachments" name="attachments" multiple  required/>
+                        </div>
+                        <div class="form-field">
+                                <label for="consent">You agree to receive emails from me</label>
+                                <input type="checkbox" id="consent" name="consent" value="yes" required />
+                        </div>
+
+                        <div class="form-field">
+                            <input type="submit" value="Send" />
+                        </div>
+                    </form>
+                    </form>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <p>Copyright 2024 by ibrah555.</p>
+            </footer>
         </div>
-    </main>
-
-    <footer>
-        <!-- Footer content goes here -->
-        <footer>
-            <p>Copyright 2024 by ibrah555.</p>
-        </footer>
-    </footer>
+    </section>
 </body>
 
 </html>
