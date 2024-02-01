@@ -1,55 +1,73 @@
-body {
-    margin: 0;
+* {
     font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header,
-footer {
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.page-header {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-header {
+    text-align: left;
     height: 70px;
     display: flex;
+    justify-content: left;
     align-items: center;
-    justify-content: flex-start;
 }
 
-.nav {
-    list-style: none;
-}
-
-.nav-item {
-    display: inline-block;
-    margin-right: 10px;
-    /* add spacing between items */
-}
-
-header a {
+.page-header a {
+    padding: 1rem;
     color: #00b8d4;
-    margin-right: 2rem;
     text-decoration: none;
-    font-weight: normal;
 }
 
-header a:hover {
-    color: #fff;
-}
-
-header a:active {
-    /* color: #b2f5ea; */
+.page-header .activePage {
+    color: #b2f5ea;
     font-weight: bold;
 }
 
-footer {
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.page-header a:hover {
+    color: white;
 }
+
+.page-footer {
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.page-footer p {
+    color: white;
+}
+
+.page-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 128px 0;
+}
+
+.page-body * {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Page Specific Styling */
 
 .profile-image {
     /* Styling for circular frame */
@@ -65,200 +83,39 @@ footer {
     object-fit: cover;
 }
 
-.card-wrapper {
-    display: flex;
-    height: 100%;
-    width: 75%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.card-item {
-    margin: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    height: 100%;
-}
-
-.card-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card-item:nth-child(1) {
-    background-color: #00b8d4;
-}
-
-.card-item:nth-child(2) {
-    background-color: #ffcccb;
-}
-
-.card-item:nth-child(3) {
-    background-color: aquamarine;
-}
-
-.form-wrapper {
-    background-color: #dddddd;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    margin: 0.5rem;
-}
-
-#connect-email {
-    font-family: 'Times New Roman';
-}
-
-input[type=submit] {
-    background-color:#333;
-    border: none;
-    font-weight: bold;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-input[type=checkbox] {
-    transform: scale(1.5);
-}
-
-
-form.form-example {
-    display: table;
-}
-
-div.form-example {
-    display: table-row;
-}
-
-label,
-input {
-    display: table-cell;
-    margin-bottom: 10px;
-}
-
-label {
-    padding: 10px;
-}
-
-.form-field {
-    display: flex;
-    align-items: center;
-}
-
-/* make sticky footer using flex-box method */
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font-family: sans-serif;
-}
-
-section {
-    height: 100%;
-}
-
-html,
-body {
-    box-sizing: border-box;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.wrapper {
-    box-sizing: border-box;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.page-header,
-.page-footer {
-    flex-grow: 0;
-    flex-shrink: 0;
-}
-
-.page-body {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top:128px;
-    margin-bottom:128px;
-}
-
-.centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-/* Table styling for calendar */
 table {
-    width: 85%;
+    width: 100%;
     border-collapse: collapse;
 }
 
-th,
+table, td, th {
+    border: 1px solid
+}
+
 td {
-    border: 1px solid #dddddd;
-    text-align: left;
+    min-height: 100px;
+    height: 3rem;
+}
+
+.card-image {
+    width: 214px;
+    border-radius: 12px;
+    height: 214px;
+    object-fit: cover;
+}
+
+.container {
+    /* max-width: 300px;
+    /* Center the container in middle on horizontal axis */
+    margin: 0 auto;
+    /* Add empty space above the container (20% of the view height) */
+    margin-top: 20vh;
+} */
+
+.card-item {
+    background-color: white;
+    border: 1px solid #bacdd8;
+    width: 300px;
     padding: 8px;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.class1 {
-    background-color: #ffcccb;
-    /* Light Red */
-}
-
-.class2 {
-    background-color: #c2f0c2;
-    /* Light Green */
-}
-
-.class3 {
-    background-color: #c2e0f0;
-    /* Light Blue */
-}
-
-.activeHomePage a {
-    color: #b2f5ea !important;
-    font-weight: bold;
-}
-
-.activeAboutPage a {
-    color: #b2f5ea !important;
-    font-weight: bold;
-}
-
-.activeProjectsPage a {
-    color: #b2f5ea !important;
-    font-weight: bold;
-}
-
-.activeContactPage a {
-    color: #b2f5ea !important;
-    font-weight: bold;
+    border-radius: 12px;
 }

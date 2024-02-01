@@ -9,97 +9,72 @@
 </head>
 
 <body>
-    <section>
-        <div class="wrapper">
-            <header class="page-header">
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="index.html">Home</a></li>
-                        <li class="nav-item"><a href="about.html">About</a></li>
-                        <li class="nav-item activeProjectsPage"><a href="projects.html">Project</a></li>
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
+<header class="page-header">
+    <a class="nav-item" href="index.html">Home</a>
+    <a class="nav-item" href="about.html">About</a>
+    <a class="nav-item activePage" href="projects.html">Project</a>
+    <a class="nav-item" href="contact.html">Contact</a>
+</header>
 
-            <main class="page-body">
-                <div class="centered">
-                    <h1>Projects</h1>
-                    <p>Here are some of my current and past projects.</p>
-                    <div class="card-wrapper">
-                        <div class="card-item">
-                            <h2>Project 1</h2>
-                            <img class="card-image" src="./project2.jpg">
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi
-                            vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
-                            condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
-                            rutrum orci, sagittis</p>
-                        </div>
-                        <div class="card-item">
-                            <h2>Project 2</h2>
-                            <img class="card-image" src="./project1.jpg">
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                                mi
-                                vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
-                                condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
-                                rutrum orci, sagittis</p>
-                        </div>
-                        <div class="card-item">
-                            <h2>Project 3</h2>
-                            <img class="card-image" src="./project1.jpg">
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam,
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                                mi
-                                vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
-                                condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum
-                                rutrum orci, sagittis</p>
-                        </div>
-                    </div>
-                    <p>Need a full stack web developer? Tell me about your project.</p>
-                    <form action="https://postman-echo.com/post" method="POST" class="form-wrapper">
-                        <div class="form-field">
-                            <label for="email">Enter your Email: </label>
-                            <input type="text" name="email" id="email" required />
-                        </div>
-                        <div class="form-field">
-                            <label for="project-type">Select project type: </label>
-                            <select name="project-type" id="project-type" required>
-                                <option value="">--Please choose an option--</option>
-                                <option value="personal">Personal</option>
-                                <option value="website">Website</option>
-                                <option value="eCommerce">eCommerce</option>
-                                <option value="game">Game</option>
-                            </select>
-                        </div>
-                        <div class="form-field">
-                            <label for="feedback">Project Details</label>
-                            <textarea id="feedback" name="feedback" rows="5" cols="33" required></textarea>
-
-                        </div>
-                        <div class="form-field">
-                            <label for="attachments">Upload files</label>
-                            <input type="file" id="attachments" name="attachments" multiple  required/>
-                        </div>
-                        <div class="form-field">
-                                <label for="consent">You agree to receive emails from me</label>
-                                <input type="checkbox" id="consent" name="consent" value="yes" required />
-                        </div>
-
-                        <div class="form-field button">
-                            <input type="submit" value="Send" />
-                        </div>
-                    </form>
-                    </form>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <p>Copyright 2024 by ibrah555.</p>
-            </footer>
+<main class="page-body">
+    <h1>Projects</h1>
+    <p>Here are some of my current and past projects.</p>
+    <div class="card-container">
+        <div class="card-item">
+            <h2>Project 1</h2>
+            <img class="card-image" src="./project2.jpg">
+            <p>Project Description</p>
         </div>
-    </section>
+        <div class="card-item">
+            <h2>Project 2</h2>
+            <img class="card-image" src="./project1.jpg">
+            <p>Project Description</p>
+        </div>
+        <div class="card-item">
+            <h2>Project 3</h2>
+            <img class="card-image" src="./project1.jpg">
+            <p>Project Description</p>
+        </div>
+    </div>
+    <p>Need a full stack web developer? Tell me about your project.</p>
+    <form action="https://postman-echo.com/post" method="POST" class="form-wrapper">
+        <div class="form-field">
+            <label for="email">Enter your Email: </label>
+            <input type="text" name="email" id="email" required />
+        </div>
+        <div class="form-field">
+            <label for="project-type">Select project type: </label>
+            <select name="project-type" id="project-type" required>
+                <option value="">--Please choose an option--</option>
+                <option value="personal">Personal</option>
+                <option value="website">Website</option>
+                <option value="eCommerce">eCommerce</option>
+                <option value="game">Game</option>
+            </select>
+        </div>
+        <div class="form-field">
+            <label for="feedback">Project Details</label>
+            <textarea id="feedback" name="feedback" rows="5" cols="33" required></textarea>
+
+        </div>
+        <div class="form-field">
+            <label for="attachments">Upload files</label>
+            <input type="file" id="attachments" name="attachments" multiple required />
+        </div>
+        <div class="form-field">
+            <label for="consent">You agree to receive emails from me</label>
+            <input type="checkbox" id="consent" name="consent" value="yes" required />
+        </div>
+
+        <div class="form-field button">
+            <input type="submit" value="Send" />
+        </div>
+    </form>
+</main>
+
+<footer class="page-footer">
+    <p>Copyright 2024 by ibrah555.</p>
+</footer>
 </body>
 
 </html>
