@@ -12,7 +12,6 @@ footer {
 
 header {
     height: 70px;
-    /* adjust as per your requirement */
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -39,8 +38,8 @@ header a:hover {
     color: #fff;
 }
 
-header a.active {
-    color: #b2f5ea;
+header a:active {
+    /* color: #b2f5ea; */
     font-weight: bold;
 }
 
@@ -54,8 +53,8 @@ footer {
 
 .profile-image {
     /* Styling for circular frame */
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -69,27 +68,19 @@ footer {
 .card-wrapper {
     display: flex;
     height: 100%;
-    width:100%;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items:flex-start;
-}
-.card-item:nth-child(1) {
-    background-color: #00b8d4;
-}
-
-.card-item:nth-child(2) {
-    background-color:#ffcccb;
-}
-
-.card-item:nth-child(3) {
-    background-color:aquamarine;
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .card-item {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
-    margin: auto;
 }
 
 .card-image {
@@ -97,6 +88,48 @@ footer {
     height: 200px;
     object-fit: cover;
 }
+
+.card-item:nth-child(1) {
+    background-color: #00b8d4;
+}
+
+.card-item:nth-child(2) {
+    background-color: #ffcccb;
+}
+
+.card-item:nth-child(3) {
+    background-color: aquamarine;
+}
+
+.form-wrapper {
+    background-color: #dddddd;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin: 0.5rem;
+}
+
+#connect-email {
+    font-family: 'Times New Roman';
+}
+
+input[type=submit] {
+    background-color:#333;
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
+
 
 form.form-example {
     display: table;
@@ -161,6 +194,21 @@ body {
 
 .page-body {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:128px;
+    margin-bottom:128px;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 /* Table styling for calendar */
@@ -193,4 +241,24 @@ th {
 .class3 {
     background-color: #c2e0f0;
     /* Light Blue */
+}
+
+.activeHomePage a {
+    color: #b2f5ea !important;
+    font-weight: bold;
+}
+
+.activeAboutPage a {
+    color: #b2f5ea !important;
+    font-weight: bold;
+}
+
+.activeProjectsPage a {
+    color: #b2f5ea !important;
+    font-weight: bold;
+}
+
+.activeContactPage a {
+    color: #b2f5ea !important;
+    font-weight: bold;
 }
