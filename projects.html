@@ -9,72 +9,99 @@
 </head>
 
 <body>
-<header class="page-header">
-    <a class="nav-item" href="index.html">Home</a>
-    <a class="nav-item" href="about.html">About</a>
-    <a class="nav-item activePage" href="projects.html">Project</a>
-    <a class="nav-item" href="contact.html">Contact</a>
-</header>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </header>
 
-<main class="page-body">
-    <h1>Projects</h1>
-    <p>Here are some of my current and past projects.</p>
-    <div class="card-container">
-        <div class="card-item">
-            <h2>Project 1</h2>
-            <img class="card-image" src="./project2.jpg">
-            <p>Project Description</p>
+    <main>
+        <h1>Projects</h1>
+        <h3>Here are some of my current and past projects.</h3>
+        <!-- <p class="large-label">Here are some of my current and past projects.</p> -->
+        <div class="card-container">
+            <div class="card-item">
+                <img class="card-image" src="./project1.jpg">
+                <div class="card-detail">
+                    <span class="tag">Learning</span>
+                    <span class="tag">DevOps</span>
+                    <h2 class="name">Quran Journey</h2>
+                    <p>The goal of this project was to develop a learning tool that incorporates scholalry material into
+                        one centralized
+                        location. In March 2024 the first release will be available to begin user testing. My role was
+                        mainly Backend
+                        developer and DevOps. </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="./project2.jpg">
+                <div class="card-detail">
+                    <span class="tag">hackaton</span>
+                    <h2 class="name">Wordle + </h2>
+                    <p>Know to be the most reviting word puzzle games, Wordle plus is a twist on the classic. Wordle
+                        plus is
+                        a mutliplayer game allowing users to play simultanous against their friends or family. This web
+                        application was developed as part of an internal company hackaton </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="card-item">
+                <img class="card-image" src="./project3.jpg">
+                <div class="card-detail">
+                    <span class="tag">fun</span>
+                    <span class="tag">learning</span>
+                    <h2 class="name">LED Cube 8x8x8</h2>
+                    <p>This project was the most ambitious yet fullfilling project once completed. The build took about
+                        4
+                        days from small scale prototyping to completed cube. Like most I stumbled upon this project and
+                        decided to test my skills.</p>
+                    <button>Read more</button>
+                </div>
+            </div>
         </div>
-        <div class="card-item">
-            <h2>Project 2</h2>
-            <img class="card-image" src="./project1.jpg">
-            <p>Project Description</p>
-        </div>
-        <div class="card-item">
-            <h2>Project 3</h2>
-            <img class="card-image" src="./project1.jpg">
-            <p>Project Description</p>
-        </div>
-    </div>
-    <p>Need a full stack web developer? Tell me about your project.</p>
-    <form action="https://postman-echo.com/post" method="POST" class="form-wrapper">
-        <div class="form-field">
-            <label for="email">Enter your Email: </label>
-            <input type="text" name="email" id="email" required />
-        </div>
-        <div class="form-field">
-            <label for="project-type">Select project type: </label>
-            <select name="project-type" id="project-type" required>
-                <option value="">--Please choose an option--</option>
-                <option value="personal">Personal</option>
-                <option value="website">Website</option>
-                <option value="eCommerce">eCommerce</option>
-                <option value="game">Game</option>
-            </select>
-        </div>
-        <div class="form-field">
-            <label for="feedback">Project Details</label>
-            <textarea id="feedback" name="feedback" rows="5" cols="33" required></textarea>
+        <h3 class="form-label">Need a full stack web developer? Tell me about your project.</h3>
+        <!-- <p class="large-label" style="margin-top: 30px;"></p> -->
+        <form action="https://postman-echo.com/post" method="POST">
+            <div class="form-field full-width-break">
+                <label for="email" class="large-label">Enter your Email: </label>
+                <input type="text" name="email" id="email" required />
+            </div>
+            <div class="form-field full-width-break">
+                <label for="project-type" class="large-label">Select project type: </label>
+                <select name="project-type" id="project-type" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="personal">Personal</option>
+                    <option value="website">Website</option>
+                    <option value="eCommerce">eCommerce</option>
+                    <option value="game">Game</option>
+                </select>
+            </div>
+            <div class="form-field full-width ">
+                <label for="feedback" class="large-label">Enter Project Details:</label>
+                <textarea id="feedback" name="feedback" rows="5" cols="33" required
+                    placeholder="Enter your project concept here"></textarea>
 
-        </div>
-        <div class="form-field">
-            <label for="attachments">Upload files</label>
-            <input type="file" id="attachments" name="attachments" multiple required />
-        </div>
-        <div class="form-field">
-            <label for="consent">You agree to receive emails from me</label>
-            <input type="checkbox" id="consent" name="consent" value="yes" required />
-        </div>
+            </div>
+            <div class="form-field full-width-break">
+                <label for="attachments">Upload files</label>
+                <input type="file" id="attachments" name="attachments" multiple required />
+            </div>
+            <div class="form-field full-width-break">
+                <label for="consent" class="small-label">You agree to receive emails from me</label>
+                <input type="checkbox" id="consent" name="consent" value="yes" required />
+            </div>
 
-        <div class="form-field button">
-            <input type="submit" value="Send" />
-        </div>
-    </form>
-</main>
+            <div class="form-field button full-width">
+                <button type="submit" value="Send">Send</button>
+            </div>
+        </form>
+    </main>
 
-<footer class="page-footer">
-    <p>Copyright 2024 by ibrah555.</p>
-</footer>
+    <footer>
+        <p>Copyright 2024 by ibrah555</p>
+    </footer>
 </body>
 
 </html>

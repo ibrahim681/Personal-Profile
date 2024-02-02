@@ -1,0 +1,35 @@
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+}
+
+th {
+    background-color: #66869a;
+    color: #d9d9d9;
+    font-weight: bold;    
+}
+
+td {
+    min-width: 100px;
+    height: 3rem;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 75%;
+    overflow-x: auto;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+*/

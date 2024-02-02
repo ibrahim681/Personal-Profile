@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,216 +8,221 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <a class="nav-item" href="index.html">Home</a>
-        <a class="nav-item activePage" href="about.html">About</a>
-        <a class="nav-item" href="projects.html">Project</a>
-        <a class="nav-item" href="contact.html">Contact</a>
+    <header>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
     </header>
 
-    <main class="page-body">
+    <main>
         <h1>About me</h1>
-        <p>I am a 4th year student at the University of Toronto.</p>
-        <p>I am currently taking the following courses:</p>
-        <ul>
-            <li>TEP321H1 Introduction to Science Communication</li>
-            <li>CSC309H1 Programming on the Web</li>
-            <li>APS440H1 Making Sense of Accidents</li>
+        <h3>I am a 4th year student at the University of Toronto.</h3>
+        <!-- <p class="large-label">I am a 4th year student at the University of Toronto.</p> -->
+        <p class="large-label">I am currently taking the following courses:</p>
+        <ul class="class-list">
+            <li class="course-code">TEP321H1 Introduction to Science Communication</li>
+            <li class="course-code">CSC309H1 Programming on the Web</li>
+            <li class="course-code">APS440H1 Making Sense of Accidents</li>
         </ul>
-        <p>This is my schedule for the Spring 2024 term:</p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>9:00 AM - 9:30 AM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>9:30 AM - 10:00 AM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10:00 AM - 10:30 AM</td>
-                    <td></td>
-                    <td class="class1" colspan="1" rowspan="2">TEP321</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>10:30 AM - 11:00 AM</td>
-                    <td></td>
-                    <!-- <td class="class1" colspan="1">TEP321</td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11:00 AM - 11:30 AM</td>
-                    <td></td>
-                    <td></td>
-                    <td class="class1" colspan="1" rowspan="2">TEP321</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>11:30 AM - 12:00 PM</td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td class="class1" colspan="1">TEP321</td> -->
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12:00 PM - 12:30 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td class="class1" colspan="1" rowspan="2">TEP321</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>12:30 PM - 1:00 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td class="class1" colspan="1">TEP321</td> -->
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1:00 PM - 1:30 PM</td>
-                    <td class="class3" colspan="1" rowspan="2">APS440</td>
-                    <td></td>
-                    <td></td>
-                    <td class="class3" colspan="1" rowspan="2">APS440</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>1:30 PM - 2:00 PM</td>
-                    <!-- <td class="class3" colspan="1">APS440</td> -->
-                    <td></td>
-                    <td></td>
-                    <!-- <td class="class3" colspan="1">APS440</td> -->
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2:00 PM - 2:30 PM</td>
-                    <td></td>
-                    <td class="class3" colspan="1" rowspan="2">APS440</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2:30 PM - 3:00 PM</td>
-                    <td></td>
-                    <!-- <td class="class3" colspan="1">APS440</td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3:00 PM - 3:30 PM</td>
-                    <td class="class2" colspan="1" rowspan="2">CSC309</td>
-                    <td></td>
-                    <td class="class2" colspan="1" rowspan="2">CSC309</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3:30 PM - 4:00 PM</td>
-                    <!-- <td class="class2" colspan="1">CSC309</td> -->
-                    <td></td>
-                    <!-- <td class="class2" colspan="1">CSC309</td> -->
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4:00 PM - 4:30 PM</td>
-                    <td class="class2" colspan="1" rowspan="2">CSC309</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4:30 PM - 5:00 PM</td>
-                    <!-- <td class="class2" colspan="1">CSC309</td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5:00 PM - 5:30 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>5:30 PM - 6:00 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6:00 PM - 6:30 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>6:30 PM - 7:00 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7:00 PM - 7:30 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>7:30 PM - 8:00 PM</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- <p class="large-label subsection">This is my schedule for the Spring 2024 term:</p> -->
+        <div id="table-container">
+            <table>
+                <caption>This is my schedule for the Spring 2024 term:</caption>
+                <thead>
+                    <tr>
+                        <th class="time">Time</th>
+                        <th class="day">Monday</th>
+                        <th class="day">Tuesday</th>
+                        <th class="day">Wednesday</th>
+                        <th class="day">Thursday</th>
+                        <th class="day">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-cell="time">9:00 AM - 9:30 AM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">9:30 AM - 10:00 AM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">10:00 AM - 10:30 AM</th>
+                        <td data-cell="monday"></td>
+                        <td class="class1" colspan="1" rowspan="2" data-cell="tuesday">TEP321</td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">10:30 AM - 11:00 AM</th>
+                        <td data-cell="monday"></td>
+                        <!-- <td class="class1" colspan="1">TEP321</td> -->
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">11:00 AM - 11:30 AM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td class="class1" colspan="1" rowspan="2" data-cell="wednesday">TEP321</td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">11:30 AM - 12:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <!-- <td class="class1" colspan="1">TEP321</td> -->
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">12:00 PM - 12:30 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td class="class1" colspan="1" rowspan="2" data-cell="thursday">TEP321</td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">12:30 PM - 1:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <!-- <td class="class1" colspan="1">TEP321</td> -->
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">1:00 PM - 1:30 PM</th>
+                        <td class="class3" colspan="1" rowspan="2" data-cell="monday">APS440</td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td class="class3" colspan="1" rowspan="2" data-cell="thursday">APS440</td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">1:30 PM - 2:00 PM</th>
+                        <!-- <td class="class3" colspan="1">APS440</td> -->
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <!-- <td class="class3" colspan="1">APS440</td> -->
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">2:00 PM - 2:30 PM</th>
+                        <td data-cell="monday"></td>
+                        <td class="class3" colspan="1" rowspan="2" data-cell="tuesday">APS440</td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">2:30 PM - 3:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <!-- <td class="class3" colspan="1">APS440</td> -->
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">3:00 PM - 3:30 PM</th>
+                        <td class="class2" colspan="1" rowspan="2" data-cell="monday">CSC309</td>
+                        <td data-cell="tuesday"></td>
+                        <td class="class2" colspan="1" rowspan="2" data-cell="wednesday">CSC309</td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">3:30 PM - 4:00 PM</th>
+                        <!-- <td class="class2" colspan="1">CSC309</td> -->
+                        <td data-cell="tuesday"></td>
+                        <!-- <td class="class2" colspan="1">CSC309</td> -->
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">4:00 PM - 4:30 PM</th>
+                        <td class="class2" colspan="1" rowspan="2" data-cell="monday">CSC309</td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">4:30 PM - 5:00 PM</th>
+                        <!-- <td class="class2" colspan="1">CSC309</td> -->
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">5:00 PM - 5:30 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">5:30 PM - 6:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">6:00 PM - 6:30 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">6:30 PM - 7:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">7:00 PM - 7:30 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="time">7:30 PM - 8:00 PM</th>
+                        <td data-cell="monday"></td>
+                        <td data-cell="tuesday"></td>
+                        <td data-cell="wednesday"></td>
+                        <td data-cell="thursday"></td>
+                        <td data-cell="friday"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </main>
-    <footer class="page-footer">
-        <p>Copyright 2024 by ibrah555.</p>
+    <footer>
+        <p>Copyright 2024 by ibrah555</p>
     </footer>
 </body>
 
