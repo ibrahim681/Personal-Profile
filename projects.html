@@ -63,14 +63,14 @@
         </div>
         <h3 class="form-label">Need a full stack web developer? Tell me about your project.</h3>
         <!-- <p class="large-label" style="margin-top: 30px;"></p> -->
-        <form action="https://postman-echo.com/post" method="POST">
+        <form action="https://postman-echo.com/post" method="POST" enctype="multipart/form-data">
             <div class="form-field full-width-break">
-                <label for="email" class="large-label">Enter your Email: </label>
-                <input type="text" name="email" id="email" required />
+                <label for="email" class="large-label">Your Email:</label>
+                <input type="email" name="email" id="email" required />
             </div>
             <div class="form-field full-width-break">
                 <label for="project-type" class="large-label">Select project type: </label>
-                <select name="project-type" id="project-type" required>
+                <select name="concept" id="project-type" required>
                     <option value="">--Please choose an option--</option>
                     <option value="personal">Personal</option>
                     <option value="website">Website</option>
@@ -85,10 +85,10 @@
 
             </div>
             <div class="form-field full-width-break">
-                <label for="attachments">Upload files</label>
+                <label for="attachments">Attachment:</label>
                 <input type="file" id="attachments" name="attachments" multiple required />
             </div>
-            <div class="form-field full-width-break">
+            <div class="form-field full-width-break align">
                 <label for="consent" class="small-label">You agree to receive emails from me</label>
                 <input type="checkbox" id="consent" name="consent" value="yes" required />
             </div>
